@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <main>
+        <div class="left-side">
+            <h1>Etch-a-Sketch</h1>
+            <p>Click a button below to choose field size. The big you field the more detail you'll be able to draw!</p>
+            <div class="controls">
+                <button class="size-btn" id="16">16 x 16</button>
+                <button class="size-btn" id="32">32 x 32</button>
+                <button class="size-btn" id="64">64 x 64</button>
+                <button class="rmv-btn" id="remove">REMOVE</button>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="grid-container"></div>
+        </div>
+    </main>
+    <script src="index.js" defer></script>
 </body>
 </html>
