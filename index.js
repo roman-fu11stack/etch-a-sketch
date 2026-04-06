@@ -12,10 +12,8 @@ function createGrid(size) {
     const cell = document.createElement('div');
     cell.classList.add('cell');
 
-    cell.addEventListener('mouseover', (e) => {
-        if (e.buttons === 1) {
-            cell.style.backgroundColor = 'black';
-        }
+    cell.addEventListener('mouseenter', () => {
+        cell.style.backgroundColor = 'black';
     });
 
     container.appendChild(cell);
